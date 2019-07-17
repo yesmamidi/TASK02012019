@@ -1,0 +1,45 @@
+SignUp URL (POST):
+
+https://vwash.herokuapp.com/user/signUpUser
+
+
+Set Content-type: application/json
+
+Json 
+{
+	"firstname":"mkm",
+
+	"lastname":"sdsdsd",
+	"emailid":"srini",
+	"password":"vas",
+	"mobile":"45454",
+	"address":""
+	
+
+}
+Result: Comes back with 200 sucess if registered: "User 'email-ID' Created successfully"
+
+SignIn URL (POST):
+
+https://vwash.herokuapp.com/user/signInUser
+
+
+Set Content-type: application/json
+
+Json 
+{
+	
+	"emailid":"srini",
+	"password":"vas"
+	
+}
+Reuslt: Comes back with 200 sucess if user present: Returns the user information :
+{"user_id":1,"first_name":"mkm","last_name":"sdsdsd","emailid":"srini","password":"vas","mobile":45454.0,"address":""}
+
+
+Get all Users (GET):
+
+https://vwash.herokuapp.com/user/users
+
+Result: Returns all users as a json format
+[{"user_id":1,"first_name":"mkm","last_name":"sdsdsd","emailid":"srini","password":"vas","mobile":45454.0,"address":""},{"user_id":11,"first_name":"mkm","last_name":"sdsdsd","emailid":"srini12","password":"vas","mobile":45454.0,"address":""}]
